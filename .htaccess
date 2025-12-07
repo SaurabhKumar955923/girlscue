@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+RewriteCond %{HTTP_HOST} ^w3y\.379\.mytemp\.website$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.w3y\.379\.mytemp\.website$
+RewriteRule ^public_html\/$ "https\:\/\/girlscue\.com\/" [R=301,L]
+
+
